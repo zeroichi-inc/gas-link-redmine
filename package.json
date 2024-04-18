@@ -1,0 +1,21 @@
+{
+  "name": "redmineanalisys",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "bundle": "esbuild src/main.ts --bundle --outdir=dist --format=iife --global-name=_entry",
+    "build": "npm run bundle && ts-node -T build.ts",
+    "push": "npm run build && clasp push"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google/clasp": "^2.4.2",
+    "@types/google-apps-script": "^1.0.82",
+    "esbuild": "^0.20.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.3"
+  }
+}
