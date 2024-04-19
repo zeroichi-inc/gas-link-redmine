@@ -1,4 +1,4 @@
-### 本環境について
+# 本環境について
 typescriptでの実装方法について
 
 - GAS（Google Apps Script）へのpushはclaspを使用します。
@@ -8,6 +8,15 @@ typescriptでの実装方法について
 - このままではGASがエントリポイントとして認識しないので、main.tsでexportされている関数をGASが認識するように変換します。(自作)
 - bundle＆buildしたファイルをdistフォルダに格納し、distフォルダの中身をpushします。
 
+# 使い方
+
+コードを修正して`npm run push`するだけでGASにpushされます。
+
+以下のスプレッドシートのGASにpushされます。
+
+https://docs.google.com/spreadsheets/d/1y91MNM8A2SkBox2mFKLM2N0JoVsX1OTw2y7Xz-Jk41k/edit#gid=0
+
+# 以下、typescriptの環境の作り方
 
 ### 初期化
 ```
